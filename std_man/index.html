@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student management</title>
+    <link rel="stylesheet" href="login1.css">
+</head>
+<body class="bodys">
+    <header>
+        <nav class="navigation">
+            <h2 class="logo">
+                <marquee><span class="title">StudentManagement</span>.Com</marquee>
+            </h2>
+            <a class="l1">Student</a>
+            <a class="l2">College</a>
+    
+        </nav>
+    </header><br>
+    <div class="wrapper">
+        <span class="closeIcon"><ion-icon name="close-outline"></ion-icon></span>
+        <div class="studentBox">
+            <form action="login.php" method="post">
+            <h2>Student Login</h2>
+        
+            <div class="inputbox">
+                <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                <input type="email" name="emails" id="emails"  required>
+                <label>Email</label>
+        
+            </div>
+            <div class="inputbox">
+                <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                <input type="password" name="passwords" id="passwords" " required>
+                <label>Password</label>
+        
+            </div>
+        
+        
+            <input type="submit" id="sLogin" value="Login" class="btn" >
+        
+            <div class="loginRegister">
+                <p>you are a staff <a href="#" class="registerlink">College login</a></p>
+            </div>
+            </form>
+        
+        
+        </div>
+        <div class="collegeBox">
+            <h2>College Login</h2>
+        
+        
+            <div class="inputbox">
+                <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                <input type="email" name="email" id="email" required>
+                <label>Email</label>
+        
+            </div>
+            <div class="inputbox">
+                <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                <input type="password" name="password" id="password"  required>
+                <label>Password</label>
+        
+            </div>
+        
+        
+            <input type="submit" id="cLogin" value="Login" class="btn">
+        
+            <div class="loginRegister">
+                <p>You are a student <a href="#" class="loginlink">Student Login</a></p>
+            </div>
+        
+        
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="login1.js"></script>
+</body>
+</html>
